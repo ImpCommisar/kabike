@@ -18,5 +18,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('kabike_app/', include('kabike_app.urls', namespace="kabike_app")),
     path('admin/', admin.site.urls),
 ]
